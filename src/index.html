@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <svg id='logo' width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M31.25 50H18.75C8.39453 50 0 41.6055 0 31.25V18.75C0 8.39453 8.39453 0 18.75 0H31.25C41.6055 0 50 8.39453 50 18.75V31.25C50 41.6055 41.6055 50 31.25 50Z" fill="#002805"/>
+            <path d="M25.0001 38.5L7.50006 20L42.5001 17.5L25.0001 38.5Z" fill="#F9B229"/>
+        </svg>
+        <span class="mobile-text">Logo</span>
+        <nav>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <button class="download-button">Button</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section-one">
+            <div class="container">
+                <h3>Lorem ipsum dolor sit amet, <span>consectetur</span> adipiscing elit.</h3>
+                <p>Sed pellentesque, lectus ut convallis vestibulum, metus urna blandit arcu, vitae malesuada tellus augue non diam.</p>
+                <button class="download-button">Download</button>
+            </div>
+        </section>
+        <section class="section-two">
+            <div class="container">
+                <div class="text">
+                    <h4>Aliquam ut libero vel urna rhoncus?</h4>
+                    <p>Proin molestie justo at rhoncus ornare. Phasellus vulputate ultrices nibh sed lacinia. Etiam dui felis, ultricies vel accumsan iaculis, accumsan ac sapien. Suspendisse volutpat ipsum orci, vitae euismod augue dapibus quis. Integer felis nisi, semper vel vehicula nec, interdum ut felis. Donec sagittis lacinia nulla eget tincidunt.</p>
+                </div>
+                <div class="tab">
+                    <button class="tab-link" onclick="OpenTab(this, 1)">Tab1</button>
+                    <button class="tab-link" onclick="OpenTab(this, 2)">Tab2</button>
+                    <button class="tab-link" onclick="OpenTab(this, 3)">Tab3</button>
+                    <button class="tab-link" onclick="OpenTab(this, 4)">Tab4</button>
+                </div>
+                <div class="tab-content" id="tab-content-1">
+                    <p>Vestiblum vel dictum ipsum? 1</p>
+                    <p>Morbi lobortis, massa ac dictum commodo, dolor ipsum dapibus massa, a fringilla ante augue eget felis. Aliquam ornare ante est, ac venenatis nunc fermentum vel. Integer vel nulla sit amet sem aliquet mollis. Nam a justo id magna semper luctus non in massa. Proin vehicula augue in felis lobortis vestibulum. Curabitur quis massa non velit tincidunt lobortis nec vitae dui.</p>
+                </div>
+                <div class="tab-content" id="tab-content-2">
+                    <p>Vestiblum vel dictum ipsum? 2</p>
+                    <p>Morbi lobortis, massa ac dictum commodo, dolor ipsum dapibus massa, a fringilla ante augue eget felis. Aliquam ornare ante est, ac venenatis nunc fermentum vel. Integer vel nulla sit amet sem aliquet mollis. Nam a justo id magna semper luctus non in massa. Proin vehicula augue in felis lobortis vestibulum. Curabitur quis massa non velit tincidunt lobortis nec vitae dui.</p>
+                </div>
+                <div class="tab-content" id="tab-content-3">
+                    <p>Vestiblum vel dictum ipsum? 3</p>
+                    <p>Morbi lobortis, massa ac dictum commodo, dolor ipsum dapibus massa, a fringilla ante augue eget felis. Aliquam ornare ante est, ac venenatis nunc fermentum vel. Integer vel nulla sit amet sem aliquet mollis. Nam a justo id magna semper luctus non in massa. Proin vehicula augue in felis lobortis vestibulum. Curabitur quis massa non velit tincidunt lobortis nec vitae dui.</p>
+                </div>
+                <div class="tab-content" id="tab-content-4">
+                    <p>Vestiblum vel dictum ipsum? 4</p>
+                    <p>Morbi lobortis, massa ac dictum commodo, dolor ipsum dapibus massa, a fringilla ante augue eget felis. Aliquam ornare ante est, ac venenatis nunc fermentum vel. Integer vel nulla sit amet sem aliquet mollis. Nam a justo id magna semper luctus non in massa. Proin vehicula augue in felis lobortis vestibulum. Curabitur quis massa non velit tincidunt lobortis nec vitae dui.</p>
+                </div>
+                <button class="download-button">Download</button>
+            </div>
+        </section>
+        <section class="section-three">
+            <div class="container">
+                <h4>Nam at pulvinar dui, ornare ullamcorper nulla cursus rhoncus velit?</h4>
+                <div class="flex-wrapper">
+                    <div class="wrapper">
+                        <svg width="132" height="78" viewBox="0 0 132 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.588652 71.4627C0.306981 70.7628 0.822257 70 1.57672 70H130.423C131.178 70 131.693 70.7628 131.411 71.4627C129.822 75.4125 125.991 78 121.734 78H10.2663C6.00863 78 2.17822 75.4125 0.588652 71.4627Z" fill="url(#paint0_linear_18_843)"/>
+                            <path d="M14.8936 32C14.8936 16.9151 14.8936 9.37258 19.5798 4.68629C24.2661 0 31.8086 0 46.8936 0H84.8936C99.9785 0 107.521 0 112.207 4.68629C116.894 9.37258 116.894 16.9151 116.894 32V70H14.8936V32Z" fill="#1B1D25"/>
+                            <defs>
+                                <linearGradient id="paint0_linear_18_843" x1="66" y1="70" x2="66" y2="78" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#626D84"/>
+                                    <stop offset="1" stop-color="#414C61"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <p>Lorem ipsum dolor sit</p>
+                        <ul>
+                            <li>Fusce imperdiet leo lobortis luctus.</li>
+                            <li>Phasellus scelerisque dolor.</li>
+                            <li>Mauris euismod metus quis eros.</li>
+                        </ul>
+                    </div>
+                    <div class="wrapper">
+                        <svg width="102" height="96" viewBox="0 0 102 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 34C13 18.9151 13 11.3726 17.6863 6.68629C22.3726 2 29.9151 2 45 2H57C72.0849 2 79.6274 2 84.3137 6.68629C89 11.3726 89 18.9151 89 34V62C89 77.0849 89 84.6274 84.3137 89.3137C79.6274 94 72.0849 94 57 94H45C29.9151 94 22.3726 94 17.6863 89.3137C13 84.6274 13 77.0849 13 62V34Z" fill="#CFD4F1"/>
+                            <mask id="mask0_1_3768" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="13" y="4" width="76" height="92">
+                                <path d="M13 36C13 20.9151 13 13.3726 17.6863 8.68629C22.3726 4 29.9151 4 45 4H57C72.0849 4 79.6274 4 84.3137 8.68629C89 13.3726 89 20.9151 89 36V64C89 79.0849 89 86.6274 84.3137 91.3137C79.6274 96 72.0849 96 57 96H45C29.9151 96 22.3726 96 17.6863 91.3137C13 86.6274 13 79.0849 13 64V36Z" fill="#D2D5F5"/>
+                            </mask>
+                            <g mask="url(#mask0_1_3768)">
+                                <path d="M13 36H51H89V64C89 79.0849 89 86.6274 84.3137 91.3137C79.6274 96 72.0849 96 57 96H45C29.9151 96 22.3726 96 17.6863 91.3137C13 86.6274 13 79.0849 13 64V36Z" fill="#CFD4F1"/>
+                            </g>
+                            <circle cx="51" cy="35" r="24" fill="url(#paint0_linear_1_3768)"/>
+                            <circle cx="51" cy="35" r="8" fill="#CFD4F1"/>
+                            <g filter="url(#filter0_d_1_3768)">
+                                <path d="M39.716 47.4228C40.7154 46.0486 42.5907 45.6505 44.0622 46.5C45.5336 47.3495 46.1265 49.1728 45.4361 50.7253L33.9686 76.5129C32.4485 79.9312 28.302 81.2795 25.0622 79.409C21.8223 77.5384 20.9168 73.2733 23.117 70.2477L39.716 47.4228Z" fill="#9BA5C9"/>
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_1_3768" x="13.4112" y="37.5548" width="43.8119" height="54.2" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dx="1.5" dy="1.5"/>
+                                    <feGaussianBlur stdDeviation="5"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0.32549 0 0 0 0 0.372549 0 0 0 0 0.462745 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_3768"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3768" result="shape"/>
+                                </filter>
+                                <linearGradient id="paint0_linear_1_3768" x1="51" y1="11" x2="51" y2="59" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#0A0F19"/>
+                                    <stop offset="1" stop-color="#414C61"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <p>Aenean sagittis mauris</p>
+                        <ul>
+                            <li>Phasellus scelerisque dolor.</li>
+                            <li>Proin id est laoreet, aliquet leo eget.</li>
+                            <li>Vestibulum vitae turpis id metus.</li>
+                        </ul>
+                    </div>
+                    <div class="wrapper">
+                        <svg width="124" height="96" viewBox="0 0 124 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="11" y="14" width="102" height="78" rx="16" fill="url(#paint0_linear_1_3784)"/>
+                            <circle cx="21" cy="24" r="2" fill="white"/>
+                            <circle cx="27" cy="24" r="2" fill="white"/>
+                            <circle cx="33" cy="24" r="2" fill="white"/>
+                            <circle cx="61.6667" cy="53" r="20" fill="url(#paint1_linear_1_3784)"/>
+                            <g filter="url(#filter0_d_1_3784)">
+                                <path d="M55 46.3333L68.3333 59.6667" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M68.3333 46.3333L55 59.6667" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_1_3784" x="53.2" y="44.5333" width="17.3333" height="17.3333" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dx="0.2" dy="0.2"/>
+                                    <feGaussianBlur stdDeviation="0.25"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_3784"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3784" result="shape"/>
+                                </filter>
+                                <linearGradient id="paint0_linear_1_3784" x1="62" y1="14" x2="62" y2="92" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#0D131F"/>
+                                    <stop offset="1" stop-color="#414C61"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_1_3784" x1="50.2381" y1="37.2857" x2="73.0953" y2="70.1429" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#A81C14"/>
+                                    <stop offset="0.942708" stop-color="#F74338"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <p>Turpis id metus vestibulum</p>
+                        <ul>
+                            <li>Vestibulum quis diam non.</li>
+                            <li>Donec consectetur leo at ultrices.</li>
+                            <li>In euismod lacus nec magna.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-four">
+            <div class="slider">
+                <div class="ellipse desktop-slider-arrows" onclick="goToPreviousSlide()">
+                    <div class="arrow">
+                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 1L1 9L9 17" stroke="#00600C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <div id="all-slides">
+                    <div class="slide">
+                        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_19_251)">
+                                <rect x="7.8125" y="7.8125" width="84.375" height="84.375" rx="17.1875" fill="url(#paint0_linear_19_251)"/>
+                                <path d="M27.7522 45.6774H31.6877V46.871H26.2845V35.629H27.7522V45.6774ZM37.1013 47.0161C36.2733 47.0161 35.5206 46.828 34.8432 46.4516C34.1765 46.0753 33.6497 45.543 33.2626 44.8548C32.8862 44.1559 32.698 43.3495 32.698 42.4355C32.698 41.5323 32.8916 40.7366 33.2787 40.0484C33.6765 39.3495 34.2142 38.8172 34.8916 38.4516C35.569 38.0753 36.3271 37.8871 37.1658 37.8871C38.0045 37.8871 38.7626 38.0753 39.44 38.4516C40.1174 38.8172 40.6497 39.3441 41.0368 40.0323C41.4346 40.7204 41.6335 41.5215 41.6335 42.4355C41.6335 43.3495 41.4292 44.1559 41.0206 44.8548C40.6228 45.543 40.0798 46.0753 39.3916 46.4516C38.7034 46.828 37.94 47.0161 37.1013 47.0161ZM37.1013 45.7258C37.6282 45.7258 38.1228 45.6022 38.5851 45.3548C39.0475 45.1075 39.4185 44.7366 39.698 44.2419C39.9884 43.7473 40.1335 43.1452 40.1335 42.4355C40.1335 41.7258 39.9937 41.1237 39.7142 40.629C39.4346 40.1344 39.069 39.7688 38.6174 39.5323C38.1658 39.285 37.6765 39.1613 37.1497 39.1613C36.612 39.1613 36.1174 39.285 35.6658 39.5323C35.2249 39.7688 34.8701 40.1344 34.6013 40.629C34.3325 41.1237 34.198 41.7258 34.198 42.4355C34.198 43.1559 34.3271 43.7634 34.5851 44.2581C34.854 44.7527 35.2088 45.1237 35.6497 45.371C36.0905 45.6075 36.5744 45.7258 37.1013 45.7258ZM45.0311 39.4677C45.2891 38.9624 45.6547 38.5699 46.1279 38.2903C46.6117 38.0108 47.1977 37.871 47.8859 37.871V39.3871H47.4988C45.8537 39.3871 45.0311 40.2796 45.0311 42.0645V46.871H43.5633V38.0323H45.0311V39.4677ZM57.6447 42.1129C57.6447 42.3925 57.6286 42.6882 57.5964 43H50.5318C50.5856 43.871 50.8813 44.5538 51.4189 45.0484C51.9673 45.5323 52.6286 45.7742 53.4028 45.7742C54.0372 45.7742 54.5641 45.629 54.9835 45.3387C55.4136 45.0376 55.7146 44.6398 55.8867 44.1452H57.4673C57.2308 44.9946 56.7576 45.6882 56.048 46.2258C55.3383 46.7527 54.4566 47.0161 53.4028 47.0161C52.5641 47.0161 51.8114 46.828 51.1447 46.4516C50.4888 46.0753 49.9727 45.543 49.5964 44.8548C49.22 44.1559 49.0318 43.3495 49.0318 42.4355C49.0318 41.5215 49.2146 40.7204 49.5802 40.0323C49.9458 39.3441 50.4566 38.8172 51.1125 38.4516C51.7792 38.0753 52.5426 37.8871 53.4028 37.8871C54.2415 37.8871 54.9835 38.0699 55.6286 38.4355C56.2738 38.8011 56.7684 39.3065 57.1125 39.9516C57.4673 40.586 57.6447 41.3065 57.6447 42.1129ZM56.1286 41.8065C56.1286 41.2473 56.005 40.7688 55.7576 40.371C55.5103 39.9624 55.1716 39.6559 54.7415 39.4516C54.3222 39.2366 53.8544 39.129 53.3383 39.129C52.5964 39.129 51.9619 39.3656 51.4351 39.8387C50.9189 40.3118 50.6232 40.9677 50.548 41.8065H56.1286ZM70.2111 37.871C70.8993 37.871 71.5122 38.0161 72.0499 38.3065C72.5875 38.586 73.0122 39.0108 73.3241 39.5806C73.6359 40.1505 73.7918 40.8441 73.7918 41.6613V46.871H72.3402V41.871C72.3402 40.9893 72.1197 40.3172 71.6789 39.8548C71.2488 39.3817 70.6628 39.1452 69.9208 39.1452C69.1574 39.1452 68.5499 39.3925 68.0982 39.8871C67.6466 40.371 67.4208 41.0753 67.4208 42V46.871H65.9692V41.871C65.9692 40.9893 65.7488 40.3172 65.3079 39.8548C64.8778 39.3817 64.2918 39.1452 63.5499 39.1452C62.7864 39.1452 62.1789 39.3925 61.7273 39.8871C61.2757 40.371 61.0499 41.0753 61.0499 42V46.871H59.5821V38.0323H61.0499V39.3065C61.3402 38.8441 61.7273 38.4893 62.2111 38.2419C62.7058 37.9946 63.2488 37.871 63.8402 37.871C64.5821 37.871 65.238 38.0376 65.8079 38.371C66.3778 38.7043 66.8025 39.1936 67.0821 39.8387C67.3294 39.2151 67.738 38.7312 68.3079 38.3871C68.8778 38.043 69.5122 37.871 70.2111 37.871Z" fill="white"/>
+                                <path d="M36.2954 57.1057C36.1394 57.1057 36.0074 57.0517 35.8994 56.9437C35.7914 56.8357 35.7374 56.7037 35.7374 56.5477C35.7374 56.3917 35.7914 56.2597 35.8994 56.1517C36.0074 56.0437 36.1394 55.9897 36.2954 55.9897C36.4454 55.9897 36.5714 56.0437 36.6734 56.1517C36.7814 56.2597 36.8354 56.3917 36.8354 56.5477C36.8354 56.7037 36.7814 56.8357 36.6734 56.9437C36.5714 57.0517 36.4454 57.1057 36.2954 57.1057ZM36.6914 57.9067V62.8387H35.8724V57.9067H36.6914ZM38.9062 58.8157C39.0682 58.5337 39.3082 58.2997 39.6262 58.1137C39.9502 57.9217 40.3252 57.8257 40.7512 57.8257C41.1892 57.8257 41.5852 57.9307 41.9392 58.1407C42.2992 58.3507 42.5812 58.6477 42.7852 59.0317C42.9892 59.4097 43.0912 59.8507 43.0912 60.3547C43.0912 60.8527 42.9892 61.2967 42.7852 61.6867C42.5812 62.0767 42.2992 62.3797 41.9392 62.5957C41.5852 62.8117 41.1892 62.9197 40.7512 62.9197C40.3312 62.9197 39.9592 62.8267 39.6352 62.6407C39.3172 62.4487 39.0742 62.2117 38.9062 61.9297V65.1787H38.0872V57.9067H38.9062V58.8157ZM42.2542 60.3547C42.2542 59.9827 42.1792 59.6587 42.0292 59.3827C41.8792 59.1067 41.6752 58.8967 41.4172 58.7527C41.1652 58.6087 40.8862 58.5367 40.5802 58.5367C40.2802 58.5367 40.0012 58.6117 39.7432 58.7617C39.4912 58.9057 39.2872 59.1187 39.1312 59.4007C38.9812 59.6767 38.9062 59.9977 38.9062 60.3637C38.9062 60.7357 38.9812 61.0627 39.1312 61.3447C39.2872 61.6207 39.4912 61.8337 39.7432 61.9837C40.0012 62.1277 40.2802 62.1997 40.5802 62.1997C40.8862 62.1997 41.1652 62.1277 41.4172 61.9837C41.6752 61.8337 41.8792 61.6207 42.0292 61.3447C42.1792 61.0627 42.2542 60.7327 42.2542 60.3547ZM45.9153 62.9197C45.5373 62.9197 45.1983 62.8567 44.8983 62.7307C44.5983 62.5987 44.3613 62.4187 44.1873 62.1907C44.0133 61.9567 43.9173 61.6897 43.8993 61.3897H44.7453C44.7693 61.6357 44.8833 61.8367 45.0873 61.9927C45.2973 62.1487 45.5703 62.2267 45.9063 62.2267C46.2183 62.2267 46.4643 62.1577 46.6443 62.0197C46.8243 61.8817 46.9143 61.7077 46.9143 61.4977C46.9143 61.2817 46.8183 61.1227 46.6263 61.0207C46.4343 60.9127 46.1373 60.8077 45.7353 60.7057C45.3693 60.6097 45.0693 60.5137 44.8353 60.4177C44.6073 60.3157 44.4093 60.1687 44.2413 59.9767C44.0793 59.7787 43.9983 59.5207 43.9983 59.2027C43.9983 58.9507 44.0733 58.7197 44.2233 58.5097C44.3733 58.2997 44.5863 58.1347 44.8623 58.0147C45.1383 57.8887 45.4533 57.8257 45.8073 57.8257C46.3533 57.8257 46.7943 57.9637 47.1303 58.2397C47.4663 58.5157 47.6463 58.8937 47.6703 59.3737H46.8513C46.8333 59.1157 46.7283 58.9087 46.5363 58.7527C46.3503 58.5967 46.0983 58.5187 45.7803 58.5187C45.4863 58.5187 45.2523 58.5817 45.0783 58.7077C44.9043 58.8337 44.8173 58.9987 44.8173 59.2027C44.8173 59.3647 44.8683 59.4997 44.9703 59.6077C45.0783 59.7097 45.2103 59.7937 45.3663 59.8597C45.5283 59.9197 45.7503 59.9887 46.0323 60.0667C46.3863 60.1627 46.6743 60.2587 46.8963 60.3547C47.1183 60.4447 47.3073 60.5827 47.4633 60.7687C47.6253 60.9547 47.7093 61.1977 47.7153 61.4977C47.7153 61.7677 47.6403 62.0107 47.4903 62.2267C47.3403 62.4427 47.1273 62.6137 46.8513 62.7397C46.5813 62.8597 46.2693 62.9197 45.9153 62.9197ZM53.2454 57.9067V62.8387H52.4264V62.1097C52.2704 62.3617 52.0514 62.5597 51.7694 62.7037C51.4934 62.8417 51.1874 62.9107 50.8514 62.9107C50.4674 62.9107 50.1224 62.8327 49.8164 62.6767C49.5104 62.5147 49.2674 62.2747 49.0874 61.9567C48.9134 61.6387 48.8264 61.2517 48.8264 60.7957V57.9067H49.6364V60.6877C49.6364 61.1737 49.7594 61.5487 50.0054 61.8127C50.2514 62.0707 50.5874 62.1997 51.0134 62.1997C51.4514 62.1997 51.7964 62.0647 52.0484 61.7947C52.3004 61.5247 52.4264 61.1317 52.4264 60.6157V57.9067H53.2454ZM60.5593 57.8167C60.9433 57.8167 61.2853 57.8977 61.5853 58.0597C61.8853 58.2157 62.1223 58.4527 62.2963 58.7707C62.4703 59.0887 62.5573 59.4757 62.5573 59.9317V62.8387H61.7473V60.0487C61.7473 59.5567 61.6243 59.1817 61.3783 58.9237C61.1383 58.6597 60.8113 58.5277 60.3973 58.5277C59.9713 58.5277 59.6323 58.6657 59.3803 58.9417C59.1283 59.2117 59.0023 59.6047 59.0023 60.1207V62.8387H58.1923V60.0487C58.1923 59.5567 58.0693 59.1817 57.8233 58.9237C57.5833 58.6597 57.2563 58.5277 56.8423 58.5277C56.4163 58.5277 56.0773 58.6657 55.8253 58.9417C55.5733 59.2117 55.4473 59.6047 55.4473 60.1207V62.8387H54.6283V57.9067H55.4473V58.6177C55.6093 58.3597 55.8253 58.1617 56.0953 58.0237C56.3713 57.8857 56.6743 57.8167 57.0043 57.8167C57.4183 57.8167 57.7843 57.9097 58.1023 58.0957C58.4203 58.2817 58.6573 58.5547 58.8133 58.9147C58.9513 58.5667 59.1793 58.2967 59.4973 58.1047C59.8153 57.9127 60.1693 57.8167 60.5593 57.8167Z" fill="white"/>
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_19_251" x1="50" y1="7.8125" x2="50" y2="92.1875" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#1A2755"/>
+                                    <stop offset="1"/>
+                                </linearGradient>
+                                <clipPath id="clip0_19_251">
+                                    <rect width="100" height="100" rx="25" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="slide-text">
+                            <p>Quisque maximus</p>
+                            <p>Phasellus hendrerit sapien vel magna congue fringilla. Phasellus finibus arcu sit amet nibh faucibus.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <svg width="100" height="101" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="55" cy="52" r="42" fill="url(#paint0_linear_1_3208)"/>
+                            <g filter="url(#filter0_d_1_3208)">
+                                <circle cx="55.5" cy="52.5" r="23.5" fill="white"/>
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_1_3208" x="23" y="20" width="65" height="65" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset/>
+                                    <feGaussianBlur stdDeviation="4.5"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.37 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_3208"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3208" result="shape"/>
+                                </filter>
+                                <linearGradient id="paint0_linear_1_3208" x1="55" y1="10" x2="55" y2="94" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF9A9A"/>
+                                    <stop offset="1" stop-color="#790505"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="slide-text">
+                            <p>Sit amet ante</p>
+                            <p>Diam id lacinia ullamcorper, ipsum nibh lobortis nibh, a eleifend elit enim non enim.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <svg width="70" height="91" viewBox="0 0 70 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_18_703)">
+                                <path d="M33.5069 3.53003C33.8927 2.8548 34.8627 2.86025 35.2424 3.53892C48.1848 26.6704 63.3335 54.4271 68.2023 62.4238C68.6194 63.1088 68.1171 64 67.3152 64H0.406275C-0.281664 64 -0.6873 63.3592 -0.358365 62.755C3.13665 56.3351 20.0458 27.0896 33.5069 3.53003Z" fill="url(#paint0_linear_18_703)"/>
+                                <path d="M0.462928 62.3511C0.553643 60.7543 1.88114 59.5094 3.48051 59.5213L64.9039 59.9803C66.414 59.9915 67.6803 61.1236 67.8601 62.623L68.0852 64.5V66C68.0852 67.6569 66.7421 69 65.0852 69H34.0852H3.26047C1.53674 69 0.16754 67.5508 0.265305 65.8298L0.462928 62.3511Z" fill="url(#paint1_linear_18_703)"/>
+                                <path d="M34.7632 76.5L30 69H39.5263L34.7632 76.5Z" fill="url(#paint2_linear_18_703)"/>
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_18_703" x1="34.1" y1="2" x2="34.1" y2="64" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#9A9A9A"/>
+                                    <stop offset="1" stop-color="#616161" stop-opacity="0"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_18_703" x1="34" y1="61" x2="34" y2="70.5" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" stop-opacity="0"/>
+                                    <stop offset="0.734375" stop-color="#353535" stop-opacity="0.963542"/>
+                                    <stop offset="1" stop-color="#2D2D2D"/>
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_18_703" x1="35" y1="79.5" x2="34.7631" y2="65" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FCFCFC" stop-opacity="0"/>
+                                    <stop offset="0.744792"/>
+                                    <stop offset="0.833333"/>
+                                </linearGradient>
+                                <clipPath id="clip0_18_703">
+                                    <rect width="70" height="90" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="slide-text">
+                            <p>Nunc in malesuada</p>
+                            <p>Ut vitae massa dignissim, tempor dui eget, suscipit neque. Aliquam erat volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-slider-arrows">
+                    <div class="ellipse" onclick="goToPreviousSlide()">
+                        <div class="arrow">
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L1 9L9 17" stroke="#00600C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ellipse" onclick="goToNextSlide()">
+                        <div class="arrow">
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L9 9L0.999996 17" stroke="#00600C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="ellipse desktop-slider-arrows" onclick="goToNextSlide()">
+                    <div class="arrow">
+                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L0.999996 17" stroke="#00600C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-five">
+            <div class="mobile-container">
+                <div class="text">
+                    <h4>Nulla ligula at tortor eleifend</h4>
+                    <p>Phasellus finibus arcu sit amet nibh faucibus, id lacinia lacus tincidunt. Proin iaculis risus ut porta accumsan. In volutpat nisl varius, lobortis mauris vitae, interdum arcu. Donec in neque libero. Proin turpis leo, porta eu justo et, lobortis porttitor dui. Quisque interdum, risus vel pretium sollicitudin, enim ipsum tempus neque, a dapibus nibh metus a metus.</p>
+                </div>
+                <img src="img/woman-working.svg" alt="Woman working with a computer">
+                <div class="buttons-wrapper">
+                    <button class="download-button">Download</button>
+                    <button class="buy-now-button">Buy Now</button>
+                </div>
+            </div>
+            <div class="desktop-container">
+                <div class="wrapper">
+                    <div class="text">
+                        <h4>Nulla ligula at tortor eleifend</h4>
+                        <p>Phasellus finibus arcu sit amet nibh faucibus, id lacinia lacus tincidunt. Proin iaculis risus ut porta accumsan. In volutpat nisl varius, lobortis mauris vitae, interdum arcu. Donec in neque libero. Proin turpis leo, porta eu justo et, lobortis porttitor dui. Quisque interdum, risus vel pretium sollicitudin, enim ipsum tempus neque, a dapibus nibh metus a metus.</p>
+                    </div>
+                    <div class="buttons-wrapper">
+                        <button class="download-button">Download</button>
+                        <button class="buy-now-button">Buy Now</button>
+                    </div>
+                </div>
+                <img src="img/woman-working.png" alt="Woman working with a computer">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <ol>
+                <li>About</li>
+                <li>Privacy Notice</li>
+                <li>Company</li>
+                <li>EULA</li>
+                <li>Support</li>
+                <li>Uninstall</li>
+                <li>Cookie</li>
+                <li>Policy</li>
+                <li>Refund Policy</li>
+            </ol>
+            <div class="text-wrapper">
+                <p>Copyright ©</p>
+                <p>All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,560 @@
+$primary-green: #00600C
+$font-family: Poppins, sans-serif
+$button-width: 272px
+$button-height: 48px
+$button-border-radius: 30px
+//mobile-width - 320px
+//add function for text, add button font settings
+
+*
+  padding: 0
+  margin: 0
+
+body.active
+  overflow: hidden
+
+header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0 15px 0
+  height: 70px
+
+.mobile-text
+  display: none
+
+nav
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.menu
+  display: none
+
+  &.active
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: 100%
+    position: fixed
+    top: 60px
+    left: 0
+    background-color: white
+    z-index: 1
+    border-top: 1px solid #00000033
+    margin-top: 7px
+    ul
+      list-style: none
+      padding-left: 24px
+      margin: 0
+    li
+        border-bottom: 1px solid #0000000D
+        padding: 20px 0 20px 0
+    a
+        text-decoration: none
+        font-family: $font-family
+        font-size: 14px
+        font-weight: 600
+        line-height: 22px
+        color: #000000
+    button
+      display: block
+      margin: 0 auto
+      background-color: $primary-green
+      color: white
+      width: $button-width
+      height: $button-height
+      border-radius: $button-border-radius
+      padding: 12px 32px 12px 32px
+      gap: 10px
+      position: relative
+      top: 10%
+      border: 0
+
+
+.hamburger.active .bar:nth-child(2)
+  opacity: 0
+
+.hamburger.active .bar:nth-child(1)
+  transform: translateY(9px) rotate(45deg)
+
+.hamburger.active .bar:nth-child(3)
+  transform: translateY(-9px) rotate(-46deg)
+
+.bar
+  background-color: black
+  width: 25px
+  height: 5.84px
+  top: 23px
+  left: 271px
+  padding: 0
+  border-radius: 3px
+  margin-top: 3px
+
+.section-one
+  display: flex
+  justify-content: center
+  height: 433px
+  box-sizing: border-box
+  background: linear-gradient(0.65turn, #75C5AE, #70A370, #528850)
+  .container
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    text-align: center
+    width: $button-width
+    height: 65%
+    margin-top: 40px
+  h3
+    font-size: 28px
+    line-height: 36px
+    padding-bottom: 10px
+    letter-spacing: -1px
+    span
+      color: $primary-green
+  p
+    padding-bottom: 20px
+    font-family: $font-family
+    font-weight: 300
+    font-size: 15px
+    line-height: 22px
+
+.section-two
+  display: flex
+  justify-content: center
+  height: 870px
+  .container
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    width: $button-width
+    margin-top: 30px
+    font-size: 0 //to remove spaces between buttons
+  h4
+    font-family: $font-family
+    font-weight: 600
+    font-size: 24px
+    line-height: 34px
+  p
+    font-family: $font-family
+    font-weight: 400
+    font-size: 15px
+    line-height: 22px
+    letter-spacing: -0.5px
+    margin: 15px 0
+  .tab
+    margin-top: 10px
+    margin-bottom: 20px
+    .tab-link
+      border: none
+      background-color: white
+      width: 55px
+      padding-bottom: 5px
+      border-bottom: 1px solid #0000000D
+  .tab-content
+    display: none
+  .tab-content.active
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 377px
+    width: 272px
+    background-color: #CFE9D5
+    border-radius: 24px
+    margin-bottom: 50px
+    padding: 0 25px
+    box-sizing: border-box
+    p:nth-child(1)
+      font-family: $font-family
+      font-weight: 500
+      font-size: 20px
+      line-height: 26px
+      letter-spacing: -1px
+      margin: 0
+    p:nth-child(2)
+      font-family: $font-family
+      font-weight: 400
+      font-size: 13px
+      line-height: 20px
+      letter-spacing: -0.25px
+
+.download-button
+  width: $button-width
+  height: $button-height
+  background-color: $primary-green
+  color: white
+  border-radius: $button-border-radius
+  border: 0
+  font-weight: 600
+  font-size: 18px
+  line-height: 31px
+  letter-spacing: -0.5px
+
+.section-three
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  height: 1055px
+  background-color: #EEFFF0
+  .container
+    height: 90%
+    width: $button-width
+  h4
+    text-align: center
+    font-family: $font-family
+    font-weight: 600
+    font-size: 24px
+    line-height: 34px
+  .wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    align-items: center
+    height: 242px
+    margin: 25px 0
+    p
+      font-family: $font-family
+      font-weight: 700
+      font-size: 18px
+      line-height: 28px
+      text-align: center
+    li
+      list-style: none
+      font-family: $font-family
+      font-weight: 300
+      font-size: 12px
+      line-height: 20px
+    li::before
+      content: url("img/check-mark.svg")
+      vertical-align: middle
+
+.section-four
+  height: 367px
+  display: flex
+  justify-content: center
+  align-items: center
+  .slider
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-evenly
+    height: 186px
+    width: 65%
+    .slide:nth-of-type(2)
+      display: none
+    .slide:nth-of-type(3)
+      display: none
+    .slide
+      height: 186px
+      padding: 10px
+      box-sizing: border-box
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+      justify-content: center
+      margin-bottom: 10px
+      p:nth-of-type(1)
+        font-family: $font-family
+        font-weight: 600
+        font-size: 14px
+        line-height: 22px
+        letter-spacing: -0.25px
+        margin: 10px 0
+      p:nth-of-type(2)
+        font-family: $font-family
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+    .mobile-slider-arrows
+      display: flex
+      justify-content: space-around
+      width: 80%
+    .desktop-slider-arrows
+      display: none
+    .ellipse
+      width: 48px
+      height: 48px
+      border: 2px solid green
+      border-radius: 50%
+    .arrow
+      transform: translateX(40%) translateY(60%)
+
+.section-five
+  height: 658px
+  background-color: #E2F2E4
+  display: flex
+  justify-content: center
+  text-align: center
+  .desktop-container
+    display: none
+  .mobile-container
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    width: $button-width
+    h4
+      font-family: $font-family
+      font-weight: 600
+      font-size: 24px
+      line-height: 34px
+      letter-spacing: -1px
+      margin-bottom: 5px
+    p
+      font-family: $font-family
+      font-weight: 400
+      font-size: 15px
+      line-height: 22px
+      letter-spacing: -0.5px
+    .buy-now-button
+      width: $button-width
+      height: $button-height
+      color: $primary-green
+      background-color: transparent
+      border-radius: $button-border-radius
+      border: 2px solid $primary-green
+      margin-top: 20px
+      font-weight: 600
+      font-size: 18px
+      line-height: 31px
+      letter-spacing: -0.5px
+
+footer
+  display: flex
+  justify-content: center
+  height: 250px
+  .container
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    text-align: center
+    width: 75%
+    ol
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-evenly
+      align-items: center
+      list-style: none
+    li
+      display: inline
+      margin: 10px
+      font-family: $font-family
+      font-weight: 400
+      font-size: 13px
+      line-height: 39px
+    .text-wrapper
+      font-family: $font-family
+      font-weight: 400
+      font-size: 14px
+      line-height: 21px
+
+button:hover
+  box-shadow: 2px 2px 2px green
+
+@media only screen and (min-width: 744px)
+  .mobile-text
+    display: inline-block
+    position: absolute
+    left: 80px
+    font-family: Righteous, sans-serif
+    font-weight: 600
+    font-size: 25px
+    line-height: 23px
+  nav
+    width: 50%
+  .hamburger
+    display: none
+  .menu
+    display: flex
+    justify-content: space-between
+    width: 100%
+    padding: 0 5%
+    box-sizing: border-box
+    ul
+      display: flex
+      align-items: center
+      justify-content: space-between
+      list-style: none
+      width: 70%
+    a
+      text-decoration: none
+      font-family: $font-family
+      font-size: 14px
+      font-weight: 600
+      line-height: 22px
+      color: #000000
+    button
+      width: 115px
+      height: 48px
+      margin-left: 5%
+
+  .section-one
+    height: 470px
+    .container
+      margin: 0
+      height: 100%
+      width: 36%
+      justify-content: space-evenly
+      h3
+        line-height: 8vh
+        font-size: 3.85vw
+        letter-spacing: -1px
+      p
+        font-weight: 400
+        font-size: 18px
+        line-height: 26px
+        letter-spacing: -0.5px
+      button
+        width: 196px
+        margin-bottom: 5px
+
+  .section-two
+    height: 813px
+    .container
+      padding: 2% 0
+      width: 46%
+      justify-content: space-evenly
+      h4
+        font-size: 36px
+        line-height: 42px
+        letter-spacing: -0.44px
+      p
+        font-size: 18px
+        line-height: 26px
+      .tab
+        .tab-link
+          width: 80px
+      .tab-content
+        width: 100%
+        height: 40%
+        margin-bottom: 2%
+        p:nth-child(1)
+          font-size: 23px
+          line-height: 34px
+        p:nth-child(2)
+          font-size: 14px
+          line-height: 27px
+      .download-button
+        width: 304px
+
+  .section-three
+    height: 517px
+    .container
+      width: 60%
+      height: 80%
+      justify-content: center
+      h4
+        font-size: 36px
+        line-height: 42px
+        letter-spacing: -1px
+      .flex-wrapper
+        display: flex
+        justify-content: space-evenly
+        .wrapper
+          margin-left: 5px
+          svg
+            height: 96px
+          ul
+            height: 80px
+
+  .section-four
+    .slider
+      flex-direction: row
+      width: 70vw
+      #all-slides
+        display: flex
+        flex-direction: row
+      .slide
+        display: flex
+        flex-direction: row
+        align-items: center
+        width: 20vw
+        margin: 0 2px
+        svg
+          width: 8vw
+          height: 85%
+        .slide-text
+          width: 18vw
+          display: flex
+          flex-direction: column
+          justify-content: flex-start
+          text-align: left
+          margin-left: 2px
+          p:nth-of-type(1)
+            font-size: 90%
+            font-family: $font-family
+            margin: 0
+          p:nth-of-type(2)
+            font-size: 80%
+            font-family: $font-family
+      .arrow
+        transform: translateX(150%) translateY(35%)
+      .slide:nth-of-type(2)
+        display: flex
+      .slide:nth-of-type(3)
+        display: flex
+      .mobile-slider-arrows
+          display: none !important
+      .desktop-slider-arrows
+          display: flex !important
+          color: palegoldenrod
+
+  .section-five
+    height: 515px
+    .mobile-container
+      display: none
+    .desktop-container
+      width: 65%
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+    .wrapper
+      display: flex
+      flex-direction: column
+      text-align: left
+      justify-content: center
+      width: 32vw
+      height: 100%
+      h4
+        font-weight: 600
+        font-size: 5vh
+        line-height: 3.5vw
+        letter-spacing: -1px
+        margin-bottom: 3%
+      p
+        font-weight: 400
+        font-size: 3vh
+        line-height: 3.5vh
+        letter-spacing: -0.5px
+    .buttons-wrapper
+      display: flex
+      margin-top: 5%
+      button
+        width: 50%
+        height: 44px
+        border: 2px solid green
+        border-radius: 30px
+        margin-right: 5%
+        font-size: 16px
+      .buy-now-button
+        background-color: transparent
+        color: #00600C
+        font-weight: 600
+        line-height: 31px
+        letter-spacing: -0.5px
+    img
+      height: 60vh
+      width: 40vw
+
+  footer
+    height: 130px
+    .text-wrapper
+      display: flex
+      flex-direction: row
+      justify-content: center
+      width: 100%
+      p
+        margin: 5px

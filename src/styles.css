@@ -51,26 +51,27 @@ nav {
   padding: 20px 0 20px 0;
 }
 .menu.active a {
-  text-decoration: none;
   font-family: Poppins, sans-serif;
-  font-size: 14px;
   font-weight: 600;
+  font-size: 14px;
   line-height: 22px;
+  letter-spacing: normal;
+  text-decoration: none;
   color: #000000;
 }
 .menu.active button {
-  display: block;
-  margin: 0 auto;
-  background-color: #00600C;
-  color: white;
   width: 272px;
   height: 48px;
   border-radius: 30px;
+  background-color: #00600C;
+  color: white;
+  border: none;
+  display: block;
+  margin: 0 auto;
   padding: 12px 32px 12px 32px;
   gap: 10px;
   position: relative;
   top: 10%;
-  border: 0;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -114,20 +115,23 @@ nav {
   margin-top: 40px;
 }
 .section-one h3 {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
   font-size: 28px;
   line-height: 36px;
-  padding-bottom: 10px;
   letter-spacing: -1px;
+  padding-bottom: 10px;
 }
 .section-one h3 span {
   color: #00600C;
 }
 .section-one p {
-  padding-bottom: 20px;
   font-family: Poppins, sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 22px;
+  letter-spacing: normal;
+  padding-bottom: 20px;
 }
 
 .section-two {
@@ -149,6 +153,7 @@ nav {
   font-weight: 600;
   font-size: 24px;
   line-height: 34px;
+  letter-spacing: normal;
 }
 .section-two p {
   font-family: Poppins, sans-serif;
@@ -203,14 +208,16 @@ nav {
 .download-button {
   width: 272px;
   height: 48px;
+  border-radius: 30px;
   background-color: #00600C;
   color: white;
-  border-radius: 30px;
-  border: 0;
+  border: none;
+  font-family: Poppins, sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 31px;
   letter-spacing: -0.5px;
+  border-radius: 30px;
 }
 
 .section-three {
@@ -226,11 +233,12 @@ nav {
   width: 272px;
 }
 .section-three h4 {
-  text-align: center;
   font-family: Poppins, sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 34px;
+  letter-spacing: normal;
+  text-align: center;
 }
 .section-three .wrapper {
   display: flex;
@@ -245,14 +253,16 @@ nav {
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
+  letter-spacing: normal;
   text-align: center;
 }
 .section-three .wrapper li {
-  list-style: none;
   font-family: Poppins, sans-serif;
   font-weight: 300;
   font-size: 12px;
   line-height: 20px;
+  letter-spacing: normal;
+  list-style: none;
 }
 .section-three .wrapper li::before {
   content: url("img/check-mark.svg");
@@ -303,6 +313,7 @@ nav {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+  letter-spacing: normal;
 }
 .section-four .slider .mobile-slider-arrows {
   display: flex;
@@ -356,15 +367,17 @@ nav {
 .section-five .mobile-container .buy-now-button {
   width: 272px;
   height: 48px;
-  color: #00600C;
-  background-color: transparent;
   border-radius: 30px;
+  background-color: transparent;
+  color: #00600C;
   border: 2px solid #00600C;
-  margin-top: 20px;
+  font-family: Poppins, sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 31px;
   letter-spacing: -0.5px;
+  border-radius: 30px;
+  margin-top: 20px;
 }
 
 footer {
@@ -387,21 +400,23 @@ footer .container ol {
   list-style: none;
 }
 footer .container li {
-  display: inline;
-  margin: 10px;
   font-family: Poppins, sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 39px;
+  letter-spacing: normal;
+  display: inline;
+  margin: 10px;
 }
 footer .container .text-wrapper {
   font-family: Poppins, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  letter-spacing: normal;
 }
 
-button:hover {
+.download-button:hover, .buy-now-button:hover {
   box-shadow: 2px 2px 2px green;
 }
 
@@ -436,11 +451,12 @@ button:hover {
     width: 70%;
   }
   .menu a {
-    text-decoration: none;
     font-family: Poppins, sans-serif;
-    font-size: 14px;
     font-weight: 600;
+    font-size: 14px;
     line-height: 22px;
+    letter-spacing: normal;
+    text-decoration: none;
     color: #000000;
   }
   .menu button {
@@ -458,11 +474,14 @@ button:hover {
     justify-content: space-evenly;
   }
   .section-one .container h3 {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 3.5vw;
     line-height: 8vh;
-    font-size: 3.85vw;
     letter-spacing: -1px;
   }
   .section-one .container p {
+    font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
@@ -481,13 +500,18 @@ button:hover {
     justify-content: space-evenly;
   }
   .section-two .container h4 {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
     font-size: 36px;
     line-height: 42px;
     letter-spacing: -0.44px;
   }
   .section-two .container p {
+    font-family: Poppins, sans-serif;
+    font-weight: initial;
     font-size: 18px;
     line-height: 26px;
+    letter-spacing: normal;
   }
   .section-two .container .tab .tab-link {
     width: 80px;
@@ -498,12 +522,18 @@ button:hover {
     margin-bottom: 2%;
   }
   .section-two .container .tab-content p:nth-child(1) {
+    font-family: Poppins, sans-serif;
+    font-weight: initial;
     font-size: 23px;
     line-height: 34px;
+    letter-spacing: normal;
   }
   .section-two .container .tab-content p:nth-child(2) {
+    font-family: Poppins, sans-serif;
+    font-weight: initial;
     font-size: 14px;
     line-height: 27px;
+    letter-spacing: normal;
   }
   .section-two .container .download-button {
     width: 304px;
@@ -517,6 +547,8 @@ button:hover {
     justify-content: center;
   }
   .section-three .container h4 {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
     font-size: 36px;
     line-height: 42px;
     letter-spacing: -1px;
@@ -607,13 +639,15 @@ button:hover {
     height: 100%;
   }
   .section-five .wrapper h4 {
+    font-family: Poppins, sans-serif;
     font-weight: 600;
-    font-size: 5vh;
+    font-size: 4.85vh;
     line-height: 3.5vw;
     letter-spacing: -1px;
     margin-bottom: 3%;
   }
   .section-five .wrapper p {
+    font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size: 3vh;
     line-height: 3.5vh;
@@ -632,11 +666,13 @@ button:hover {
     font-size: 16px;
   }
   .section-five .buttons-wrapper .buy-now-button {
-    background-color: transparent;
-    color: #00600C;
+    font-family: Poppins, sans-serif;
     font-weight: 600;
+    font-size: 18px;
     line-height: 31px;
     letter-spacing: -0.5px;
+    background-color: transparent;
+    color: #00600C;
   }
   .section-five img {
     height: 60vh;
